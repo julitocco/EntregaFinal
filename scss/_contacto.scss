@@ -1,4 +1,25 @@
 /* Formulario */
+.formContacto {
+  width: 40vw;
+  height: auto;
+  background-color: #fafafa;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contacto {
+  text-align: center;
+  background-color: #7AB730;
+  color: #fafafa;
+}
+
+.contacto h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px;
+}
+
+
 
 form {
     margin-top: 20px;
@@ -50,26 +71,6 @@ form {
     outline: none;
   }
   
-  /** responsive */
-  /* vista tablet */
-  
-  @media (max-width: 1023px) {
-    /* Header*/
-  
-    .encabezado {
-      height: auto;
-      flex-direction: column;
-      text-align: center;
-    }
-  }
-  
-  .encabezado .boton {
-    display: none;
-  }
-  
-  /* Banner*/
-  
-  .bannerContenido p {
-    font-size: 2.5 rem;
-  }
+ 
+ 
   

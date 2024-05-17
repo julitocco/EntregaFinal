@@ -58,10 +58,23 @@ body {
   color: #7ab730;
 }
 
+/*Main*/
+main {
+  margin: 20px;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px 0 px;
+}
+
 .banner {
-  background-image: url("https://acdn.mitiendanube.com/stores/887/695/themes/material/2-slide-1706621125132-910990785-39695fb81bc0e6e80e82770d9a3b63ce1706621132-1920-1920.webp?804152104");
+  background-image: url(https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: center;
-  height: calc(60vh - 60px);
+  height: calc(100vh - 80px);
   position: relative;
   display: flex;
   justify-content: center;
@@ -109,10 +122,88 @@ body {
   font-size: 2.5 rem;
 }
 
+.footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.infoContacto p,
+.redesSociales a {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.redesSociales a {
+  text-align: center;
+  color: #7ab730;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+.redesSociales a .redesSociales a:hover {
+  color: #28a745;
+}
+
+.footer i {
+  margin-right: 10px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+.footerContenido {
+  text-align: center;
+}
+
+/* Ajustes específicos para la vista móvil*/
+/*0 hasta 768px*/
+/************/
+/*Testimonios*/
+.testimonial {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.testimonial-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.testimonial-1 {
+  flex-basis: calc(50% px);
+  padding: 50px;
+  text-align: left;
+  background-color: #ffffff;
+  border-top: 5px solid #9BCE21;
+}
+
+.testimonial-1 img {
+  width: 100px;
+}
+
+.testimonial-1 p {
+  color: #515557;
+  margin-bottom: 25px;
+}
+
 /* Productos */
 .productos {
   text-align: center;
-  margin: 10vh;
+  margin: 10vh auto;
   border-bottom: 1px solid black;
 }
 
@@ -120,6 +211,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin-bottom: 20vh;
 }
 
 .productos h3 {
@@ -140,12 +232,6 @@ body {
   text-align: center;
 }
 
-.precio {
-  font-size: 17px;
-  font-weight: 700;
-  color: #ff9100 !important;
-}
-
 .tarjeta {
   display: flex;
   flex-direction: column;
@@ -158,8 +244,7 @@ body {
   margin: 10px;
 }
 .tarjeta img {
-  max-width: 100%;
-  max-width: 100%;
+  max-width: 50%;
 }
 .tarjeta p {
   margin: 10px 0;
@@ -177,110 +262,33 @@ body {
   background-color: #28a745;
 }
 
-/*Productos*/
-.productos {
-  margin: 5vh;
-  font-size: 2rem;
+.precio {
+  font-size: 25px;
+  font-weight: 500px;
+  color: #ff9100 !important;
 }
 
-.productos h3,
-.productos p {
-  font-size: inherit;
+/* Formulario */
+.formContacto {
+  width: 40vw;
+  height: auto;
+  background-color: #fafafa;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.contenedorProductos {
-  grid-template-columns: 1fr 1fr;
-}
-
-.footer {
-  background-color: #212121;
-  color: #fff;
-  padding: 20px 0px;
-}
-
-.footerContacto {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer h4 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.infoContacto p {
-  margin: 5px 0;
-  font-size: 1.2rem;
+.contacto {
   text-align: center;
+  background-color: #7AB730;
+  color: #fafafa;
 }
 
-.redesSociales a {
-  margin: 5px 0;
-  font-size: 1.2rem;
-  text-align: center;
-  color: #7ab730;
-  text-decoration: none;
-  margin-right: 10px;
-  font-size: 1.5rem;
-}
-.redesSociales a:hover {
-  color: #28a745;
-}
-
-.footer i {
-  margin-right: 10px;
-}
-
-a {
-  text-decoration: none;
+.contacto h1 {
   text-transform: uppercase;
   font-weight: bold;
-  color: black;
+  padding: 15px;
 }
 
-/*Testimonios*/
-.testimonial {
-  padding: 100px 0;
-  text-align: center;
-}
-
-.testimonial-content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
-.testimonial-1 {
-  flex-basis: calc(50% - 20 px);
-  padding: 50px;
-  text-align: left;
-  background-color: #ffffff;
-  border-top: 5px solid #9BCE21;
-}
-
-.testimonial-1 img {
-  width: 100px;
-}
-
-.testimonial-1 p {
-  color: #515557 ;
-  margin-bottom: 25px;
-}
-
-
-/*Footer*/
-.footerContenido {
-  flex-direction: column;
-  text-align: center;
-}
-
-/* Ajustes específicos para la vista móvil*/
-/*0 hasta 768px*/
-/************/
-/* Formulario */
 form {
   margin-top: 20px;
 }
@@ -350,33 +358,14 @@ label {
   font-size: 2.5 rem;
 }
 
-/** responsive */
-/* vista tablet */
-@media (max-width: 1023px) {
-  /* Header*/
-  .encabezado {
-    height: auto;
-    flex-direction: column;
-    text-align: center;
-  }
-}
-.encabezado .boton {
-  display: none;
-}
-
-/* Banner*/
-.bannerContenido p {
-  font-size: 2.5 rem;
-}
-
 /*Productos*/
 .productos {
   margin: 5vh;
   font-size: 2rem;
 }
 
-.destinos h3,
-.destinos p {
+.productos h3,
+.productos p {
   font-size: inherit;
 }
 
@@ -390,8 +379,39 @@ label {
   text-align: center;
 }
 
+/*Contacto*/
+.formContacto {
+  width: 80vw;
+}
+
 /* Ajustes específicos para la vista móvil*/
 /*0 hasta 768px*/
+@media (max-width: 768px) {
+  /*Productos*/
+  .contenedorProductos {
+    grid-template-columns: 1fr;
+  }
+  /*Testimonios*/
+  .testimonial {
+    padding: 30px;
+  }
+  .testimonial-content {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .testimonial-1 {
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  /*Footer*/
+  .footer {
+    padding: 30px;
+  }
+  .footerContenido {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 /************/
 /*Nosotros*/
 .contenedorTexto {
@@ -427,17 +447,10 @@ p {
   margin-bottom: 20px;
 }
 
-/*Main*/
-main {
-  margin: 20px;
-  padding: 20px;
-}
-
-h1,
-h2 {
-  text-align: center;
-  text-decoration: underline;
-  margin: 20px 0 px;
+.productos h3 {
+  color: #28a745;
+  text-transform: uppercase;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=estilo.css.map */

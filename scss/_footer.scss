@@ -1,15 +1,8 @@
 .footer {
     background-color: #212121;
     color: #fff;
-    padding: 10px 0px;
-}
-
-.footerContacto {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 30px;
+    text-align: center;
 }
 
 .footer h4 {
@@ -17,28 +10,28 @@
     margin-bottom: 10px;
 }
 
-.infoContacto p {
+.infoContacto p,
+.redesSociales a { 
     margin: 5px 0;
     font-size: 1.2rem;
     text-align: center;
 }
 
 .redesSociales a {
-    margin: 5px 0;
-    font-size: 1.2rem;
     text-align: center;
     color: #7ab730;
     text-decoration: none;
     margin-right: 10px;
     font-size: 1.5rem;
 
-    &:hover {
+    .redesSociales a:hover {
         color: #28a745;
     }
 }
 
 .footer i {
     margin-right: 10px;
+    text-align: center;
 }
 
 a {
@@ -46,19 +39,20 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     color: black;
+
 }
 
-/*Footer*/
-
 .footerContenido {
-    flex-direction: column;
     text-align: center;
   }
   
   /* Ajustes específicos para la vista móvil*/
   /*0 hasta 768px*/
   
-  @media (max-width: 768px) {}
+  @media (max-width: 768px) {
+
+    
+  }
   
   /************/
   
